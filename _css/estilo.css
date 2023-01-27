@@ -1,4 +1,9 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@font-face{
+    font-family: 'FonteLogo';
+    src: url(../_fonts/bubblegum-sans-regular.otf);
+}    
 
 /* Fundo do Site */
 body {
@@ -26,7 +31,7 @@ p {
 header#cabecalho img#icone{
     position: absolute;
     top: 60px;
-    left: 850px;
+    left: 875px;
 }
 
 header#cabecalho{
@@ -36,7 +41,7 @@ header#cabecalho{
 }
 
 header#cabecalho h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'FonteLogo', sans-serif;
     font-size: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
@@ -45,7 +50,7 @@ header#cabecalho h1{
 }
 
 header#cabecalho h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: #888888;
     font-size: 15pt;
     padding: 0px;
@@ -92,7 +97,7 @@ nav#menu ol{
     text-transform: uppercase;
     position: absolute;
     top: -20px;
-    left: 400px;
+    left: 450px;
 }
 
 nav#menu li{
@@ -118,4 +123,29 @@ nav#menu a {
 
 nav#menu a:hover{
     color: white;
+}
+
+/*Estilização do Corpo*/
+
+section#corpo{
+    display: block;
+    width: 500px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 20px;
+}
+
+aside#lateral{
+    display: block;
+    width: 350px;
+    float: right;
+}
+
+footer#rodape{
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+footer#rodape p {
+    text-align: center;
 }
